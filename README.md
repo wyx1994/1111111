@@ -15,9 +15,11 @@
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. JNAProject文件夹中，是调用底层接口的动态库项目；
+大致原理是使用jna调用C#的DLL需要C++做中间件，因为C#的代码托管到.NET平台上，java不能直接调用。但是C++可以，流程为：c++调用写好的c#的dll，java再调用c++生成的dll中间件
+2. CustomsParking/JNAProject/CSharpDEMO/libs文件夹下有两个dll，其中【Newtonsoft.Json.dll】要添加到项目的引用中去，替换掉最原始的Newtonsoft.Json.dll引用文件，【SmartDevice.dll】要放到JDK的bin目录中；
+3. 项目CSharpDEMO所生成的dll和子项目RePackLib所生成的dll也要同时拷贝到JDK的bin目录中；
+4、
 
 #### 参与贡献
 
