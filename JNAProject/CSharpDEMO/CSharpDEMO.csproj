@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2B84CF2-89E7-4861-80F2-155D920BBD49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpDEMO</RootNamespace>
+    <AssemblyName>CSharpDEMO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\bin64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArtificialReleaseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtificialReleaseFrm.Designer.cs">
+      <DependentUpon>ArtificialReleaseFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchDeleteCertificateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchDeleteCertificateFrm.Designer.cs">
+      <DependentUpon>BatchDeleteCertificateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchLoadCertificateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchLoadCertificateFrm.Designer.cs">
+      <DependentUpon>BatchLoadCertificateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Method.cs" />
+    <Compile Include="DeleteCertificateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCertificateFrm.Designer.cs">
+      <DependentUpon>DeleteCertificateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevMgr.cs" />
+    <Compile Include="DevResetFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevResetFrm.Designer.cs">
+      <DependentUpon>DevResetFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GateControlFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GateControlFrm.Designer.cs">
+      <DependentUpon>GateControlFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GloablInfo.cs" />
+    <Compile Include="LoadCertificateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadCertificateFrm.Designer.cs">
+      <DependentUpon>LoadCertificateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDisplayFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDisplayFrm.Designer.cs">
+      <DependentUpon>LoadDisplayFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadLEDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadLEDFrm.Designer.cs">
+      <DependentUpon>LoadLEDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPortIPFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPortIPFrm.Designer.cs">
+      <DependentUpon>ModifyPortIPFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyUpdateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotifyUpdateFrm.Designer.cs">
+      <DependentUpon>NotifyUpdateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\Certificate.cs" />
+    <Compile Include="Protocol\DeviceState.cs" />
+    <Compile Include="Protocol\EventReport.cs" />
+    <Compile Include="Protocol\LEDDisplayVoiceText.cs" />
+    <Compile Include="Protocol\ManualThrough.cs" />
+    <Compile Include="Protocol\ClassForEnum.cs" />
+    <Compile Include="Protocol\DeviceInfo.cs" />
+    <Compile Include="Protocol\DeviceRegister.cs" />
+    <Compile Include="Protocol\DeviceRegisterResponse.cs" />
+    <Compile Include="Protocol\DeviceResponseHead.cs" />
+    <Compile Include="Protocol\DeviceSendHead.cs" />
+    <Compile Include="Protocol\DownloadBlackAndWhiteList.cs" />
+    <Compile Include="Protocol\GateControl.cs" />
+    <Compile Include="Protocol\ModifyIpPort.cs" />
+    <Compile Include="Protocol\NotifyDeviceUpdate.cs" />
+    <Compile Include="Protocol\Parameter.cs" />
+    <Compile Include="Protocol\ReadParameterResponse.cs" />
+    <Compile Include="Protocol\ReadSubDeviceResponse.cs" />
+    <Compile Include="Protocol\ReadTimeResponse.cs" />
+    <Compile Include="Protocol\ReadVolResponse.cs" />
+    <Compile Include="Protocol\RecordUpload.cs" />
+    <Compile Include="Protocol\RemainPlace.cs" />
+    <Compile Include="Protocol\SetVol.cs" />
+    <Compile Include="Protocol\SnapPicture.cs" />
+    <Compile Include="Protocol\SubDeviceInfo.cs" />
+    <Compile Include="Protocol\VersionInfo.cs" />
+    <Compile Include="Protocol\Vol.cs" />
+    <Compile Include="ReadCertificateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadCertificateFrm.Designer.cs">
+      <DependentUpon>ReadCertificateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportVoiceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportVoiceFrm.Designer.cs">
+      <DependentUpon>ReportVoiceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetParamFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetParamFrm.Designer.cs">
+      <DependentUpon>SetParamFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetVoiceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetVoiceFrm.Designer.cs">
+      <DependentUpon>SetVoiceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmartDeviceInterface.cs" />
+    <Compile Include="SnapPictureFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapPictureFrm.Designer.cs">
+      <DependentUpon>SnapPictureFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArtificialReleaseFrm.resx">
+      <DependentUpon>ArtificialReleaseFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchDeleteCertificateFrm.resx">
+      <DependentUpon>BatchDeleteCertificateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchLoadCertificateFrm.resx">
+      <DependentUpon>BatchLoadCertificateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCertificateFrm.resx">
+      <DependentUpon>DeleteCertificateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevResetFrm.resx">
+      <DependentUpon>DevResetFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateControlFrm.resx">
+      <DependentUpon>GateControlFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadCertificateFrm.resx">
+      <DependentUpon>LoadCertificateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDisplayFrm.resx">
+      <DependentUpon>LoadDisplayFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadLEDFrm.resx">
+      <DependentUpon>LoadLEDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPortIPFrm.resx">
+      <DependentUpon>ModifyPortIPFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifyUpdateFrm.resx">
+      <DependentUpon>NotifyUpdateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReadCertificateFrm.resx">
+      <DependentUpon>ReadCertificateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportVoiceFrm.resx">
+      <DependentUpon>ReportVoiceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetParamFrm.resx">
+      <DependentUpon>SetParamFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetVoiceFrm.resx">
+      <DependentUpon>SetVoiceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapPictureFrm.resx">
+      <DependentUpon>SnapPictureFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dz.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCDEMO.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\offline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\online.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\root.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
