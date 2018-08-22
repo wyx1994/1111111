@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>停车场</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="http://vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/5.19/video.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img class="logo" src="css/iamges/logo.png">
+            <span class="sys-name">海关卡口管理系统</span>
+            <span class="version">版本：1.1.0</span>
+        </div>
+        <ul class="header-middle">
+            <li class="year">2018.08.10</li>
+            <li class="year">22: 23</li>
+        </ul>
+        <div class="header-right">
+            <ul class="site-info">
+                <li>关区：<span class="district">0211出口加工区</span></li>
+                <li>卡口：<span class="bayonet">第一卡口</span></li>
+            </ul>
+            <div class="user-info">
+                操作员：<span class="user-name">张三</span>
+                <span class="line">|</span>
+                <a href="javascript:void(0)">退出</a>
+            </div>
+            <img class="scan-icon" src="css/iamges/scan-icon.png" width="59" height="59">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <div class="content-top">
+               <div class="video">
+			  <video
+				id="my-player"
+				class="video-js"
+			
+				preload="auto"
+				width="500px"
+				height="500px"
+				poster="//vjs.zencdn.net/v/oceans.png"
+				data-setup='{}'>
+				<source src='rtmp://192.168.2.106:1935/hls/test' type='rtmp'/>  
+			</video>
+              
+                </div>
+                <div class="image">
+                    <img src="css/iamges/image.png" width="100%" height="100%">
+                </div>
+                <div class="way-info">
+                    <p class="title">第一通过</p>
+                    <table>
+                        <tr>
+                            <td width="40%" align="right">
+                                时间：
+                            </td>
+                            <td class="value-td">2018.08.10 17:26</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                设备状态：
+                            </td>
+                            <td class="value-td">正常</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                车牌识别器：
+                            </td>
+                            <td class="value-td">异常</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                闸口设备：
+                            </td>
+                            <td class="value-td">正常</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                显示设备：
+                            </td>
+                            <td class="value-td">正常</td>
+                        </tr>
+                    </table>
+                    <div class="opts">
+                        <button>人工入场抬杆</button>
+                        <button>人工出场抬杆</button>
+                        <div class="split-line"></div>
+                        <button>锁定</button>
+                        <button>换班</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th width="25%">序号</th>
+                        <th width="25%">过车时间</th>
+                        <th width="25%">车牌</th>
+                        <th width="25%">放行状态</th>
+                    </tr>
+                    <tr class="odd">
+                        <td>01</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                    <tr class="even">
+                        <td>02</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>03</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                    <tr class="even">
+                        <td>04</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>05</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                    <tr class="even">
+                        <td>06</td>
+                        <td>2018.08.10 17:22</td>
+                        <td>津HAB345</td>
+                        <td>入口放行</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="content-top">
+                <div class="status">
+                    <p class="title">放行状态</p>
+                    <div class="line">
+                        查验
+                    </div>
+                    <div class="line">
+                        <button>放行</button>
+                        <button>不放行</button>
+                    </div>
+                    <div class="line">
+                        核验
+                    </div>
+                    <div class="line">
+                        <button>放行</button>
+                        <button>不放行</button>
+                    </div>
+                    <div class="line">
+                        放行
+                    </div>
+                    <div class="line">
+                        不放行
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="traffic-info">
+                   <p class="title">同行信息</p>
+                    <table>
+                        <tr>
+                            <td width="40%" align="right">
+                                入区票数：
+                            </td>
+                            <td class="value-td">89</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                出区票数：
+                            </td>
+                            <td class="value-td">80</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                车辆数：
+                            </td>
+                            <td class="value-td">100</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                查验数：
+                            </td>
+                            <td class="value-td">100</td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                异常处理数：
+                            </td>
+                            <td class="value-td">2</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+   var player = videojs('my-player');
+   var options = {};
+
+   var player = videojs('my-player', options, function onPlayerReady() {
+     videojs.log('Your player is ready!');
+     // In this context, `this` is the player that was created by Video.js.
+     this.play();
+     // How about an event listener?
+     this.on('ended', function() {
+       videojs.log('Awww...over so soon?!');
+     });
+   });
+   </script>
+</body>
+</html>

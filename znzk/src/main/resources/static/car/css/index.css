@@ -1,0 +1,194 @@
+body{
+	background: #eee;
+}
+.header{
+	overflow: hidden;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+	background: #197ef2;
+}
+.header-left{
+	float: left;
+}
+.logo{
+	margin: 0 30px;
+	vertical-align: -18px;
+}
+.sys-name{
+	font-size: 26px;
+}
+.version{
+	margin-left: 30px;
+	font-size: 16px;
+}
+.header-middle{
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 60px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.header-right{
+	float: right;
+}
+.site-info,.user-info,.scan-icon{
+	float: left;
+	font-size: 18px;
+}
+.site-info{
+	height: 60px;
+	line-height: 30px;
+	margin: 5px 0;
+	margin-right: 50px;
+}
+.user-info a{
+	color: #fff;
+}
+.line{
+	margin: 0 10px;
+}
+.scan-icon{
+	margin: 5px 30px;
+}
+.content{
+	display: flex;
+	width: 100%;
+	height: 300px;
+}
+.left-content{
+	flex: 3;
+	margin: 10px;
+}
+.content-top{
+	display: flex;
+	width: 100%;
+	height: 55%;
+}
+.video{
+	flex: 3;
+	margin: 0 10px 10px;
+}
+.image{
+	flex: 3;
+	margin: 0 10px 10px;
+}
+.way-info{
+	flex: 2.1;
+	margin: 0 10px 10px;
+	background: #fff;
+}
+.way-info p.title{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	background: #197ef2;
+}
+.way-info table{
+	width: 100%;
+	padding: 5px 10px;
+}
+.value-td{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+.opts{
+	width: 100%;
+	text-align: center;
+}
+.opts button{
+	width: 40%;
+	height: 26px;
+	line-height: 26px
+	margin: 2%;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background: #00b7ee;
+	cursor: pointer;
+}
+.split-line{
+	height: 10px;
+}
+.content-bottom{
+	width: 100%;
+	height: 45%;
+}
+.content-bottom table{
+	width: 100%;
+	padding: 0 10px;
+}
+.content-bottom table th{
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+	background: #197ef2;
+}
+.content-bottom table td{
+	height: 30px;
+	line-height: 30px;
+	border-right: ;
+	text-align: center;
+}
+.odd{
+	background: #fff;
+}
+.even{
+	background: #d2ecf8;
+}
+.right-content{
+	flex: 1;
+	margin: 10px;
+}
+.status{
+	width: 100%;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.status p.title,.traffic-info p.title{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	background: #197ef2;
+}
+.status .line{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+.status .line button{
+	height: 40px;
+	margin: 0 10%;
+	padding: 0 10px;
+	line-height: 40px;
+	border: none;
+	border-radius: 5px;
+	color: #204672;
+	font-size: 18px;
+	background: #4d7eb7;
+	cursor: pointer;
+}
+.traffic-info{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.traffic-info td{
+	font-size: 14px;
+}
