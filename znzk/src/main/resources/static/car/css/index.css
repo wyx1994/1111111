@@ -3,8 +3,8 @@ body{
 }
 .header{
 	overflow: hidden;
-	height: 70px;
-	line-height: 70px;
+	height: 60px;
+	line-height: 60px;
 	color: #fff;
 	background: #197ef2;
 }
@@ -13,18 +13,18 @@ body{
 }
 .logo{
 	margin: 0 30px;
-	vertical-align: -18px;
+	vertical-align: -11px;
 }
 .sys-name{
-	font-size: 26px;
+	font-size: 24px;
 }
 .version{
 	margin-left: 30px;
-	font-size: 16px;
+	font-size: 14px;
 }
 .header-middle{
 	position: absolute;
-	top: 5px;
+	top: 0px;
 	left: 50%;
 	margin-left: -50px;
 	width: 100px;
@@ -38,12 +38,11 @@ body{
 }
 .site-info,.user-info,.scan-icon{
 	float: left;
-	font-size: 18px;
+	font-size: 14px;
 }
 .site-info{
 	height: 60px;
 	line-height: 30px;
-	margin: 5px 0;
 	margin-right: 50px;
 }
 .user-info a{
@@ -53,7 +52,7 @@ body{
 	margin: 0 10px;
 }
 .scan-icon{
-	margin: 5px 30px;
+	margin: 10px 30px;
 }
 .content{
 	display: flex;
@@ -72,6 +71,9 @@ body{
 .video{
 	flex: 3;
 	margin: 0 10px 10px;
+}
+.video-js.vjs-16-9, .video-js.vjs-4-3, .video-js.vjs-fluid{
+	height: 100%;
 }
 .image{
 	flex: 3;
