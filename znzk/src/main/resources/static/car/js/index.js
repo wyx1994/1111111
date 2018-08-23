@@ -10,7 +10,7 @@ $(function(){
 function loadRecords() {
 	$.ajax({
 		type : "POST",
-		url : url.alerts,
+		url : url,
 		success : function(data) {
 			if (!!!websocket) {
 				websocket = $.websocket("ws://",refreshWSList);
