@@ -49,7 +49,7 @@ public class JavaFXContextMenuSample extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        browser.loadURL("http://www.google.com");
+        browser.loadURL("http://192.168.2.106:18080/car/index.html");
     }
 
     public static void main(String[] args) {

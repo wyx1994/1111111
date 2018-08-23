@@ -39,7 +39,7 @@ public class JavaFXHTMLToImageSample extends Application {
         Browser.invokeAndWaitFinishLoadingMainFrame(browser, new Callback<Browser>() {
             @Override
             public void invoke(Browser browser) {
-                browser.loadURL("https://teamdev.com");
+                browser.loadURL("http://192.168.2.106:18080/car/index.html");
             }
         });
 
@@ -51,7 +51,7 @@ public class JavaFXHTMLToImageSample extends Application {
         Image image = lightWeightWidget.getImage();
 
         // #5 Save the image into a PNG file
-        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "PNG", new File("google.com.png"));
+        ImageIO.write(SwingFXUtils.fromFXImage(image, null), "PNG", new File("http://192.168.2.106:18080/car/index.html"));
 
         // #7 Dispose Browser instance.
         browser.dispose();

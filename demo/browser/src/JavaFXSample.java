@@ -31,11 +31,11 @@ public class JavaFXSample extends Application {
         Browser browser = new Browser();
         BrowserView view = new BrowserView(browser);
 
-        Scene scene = new Scene(new BorderPane(view), 700, 500);
+        Scene scene = new Scene(new BorderPane(view), 1200, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        browser.loadURL("http://www.google.com");
+        browser.loadURL("http://192.168.2.106:18080/car/index.html");
     }
 
     public static void main(String[] args) {
