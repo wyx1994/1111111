@@ -194,3 +194,105 @@ body{
 .traffic-info td{
 	font-size: 14px;
 }
+
+/*登录窗*/
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items:center;/*垂直居中*/
+  	justify-content: center;/*水平居中*/
+  	width: 100%;
+  	height: 100%;
+	background: rgba(0,0,0,.6);
+}
+.login-box{
+	overflow: hidden;
+	width: 490px;
+	height: 290px;
+	border-radius: 5px;
+	color: #fff;
+	background: url(iamges/login_bg.png);
+}
+.login-title{
+	padding: 20px 0;
+	text-align: center;
+}
+.login-title .logo{
+	margin-right: 10px;
+	vertical-align: -6px;
+}
+.login-title .sys-name{
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.login-content{
+	display: flex;
+	height: 200px;
+}
+.left{
+	flex: 1;
+	height: 100%;
+	padding-top: 35px;
+	box-sizing: border-box;
+	border-right: 1px solid #fff;
+}
+.left li,.right li{
+	height: 40px;
+	line-height: 40px;
+}
+.left .title{
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+.left select{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+	background: transparent;
+}
+.right{
+	flex: 1;
+	padding-top: 35px;
+}
+.right li{
+	text-align: center;
+}
+.right li img{
+	margin-right: 3px;
+	vertical-align: -6px;
+}
+.right li.pwd img{
+	margin: 0 6px 0 3px;
+}
+.right li input{
+	width: 158px;
+	height: 24px;
+	padding: 0 5px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background: #8ABCF7;
+}
+.right li.login-btn{
+	text-align: center;
+}
+.right li.login-btn button{
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	border: none;
+	border-radius: 5px;
+	color: #333;
+	background: #fff;
+	cursor: pointer;
+}
+.right li.modify-pwd{
+	padding-right: 22px;
+	box-sizing: border-box;
+	text-align: right;
+	font-size: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+}

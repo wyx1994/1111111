@@ -1,6 +1,13 @@
 var websocket=null;
 $(function(){
 	$('.content').height($(window).height()-$('.header').height());
+	$('.logout-btn').click(function(){
+		$('.mask').css('display','flex');
+	})
+
+	$('.login-btn button').click(function(){
+		$('.mask').css('display','none');
+	})
 })
 
 
