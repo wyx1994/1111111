@@ -1,0 +1,122 @@
+body{
+	background: #eee;
+}
+.header{
+	overflow: hidden;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	background: #197ef2;
+}
+.header-left{
+	float: left;
+}
+.logo{
+	margin: 0 30px;
+	vertical-align: -11px;
+}
+.sys-name{
+	font-size: 24px;
+}
+.version{
+	margin-left: 30px;
+	font-size: 14px;
+}
+.header-middle{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 60px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.header-right{
+	float: right;
+}
+.site-info,.user-info,.scan-icon{
+	float: left;
+	font-size: 14px;
+}
+.site-info{
+	height: 60px;
+	line-height: 30px;
+	margin-right: 50px;
+}
+.user-info a{
+	color: #fff;
+}
+.line{
+	margin: 0 10px;
+}
+.scan-icon{
+	margin: 10px 30px;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	background: #fff;
+}
+.search-box{
+	height: 120px;
+	padding: 0 10px;
+	background: #eee;
+}
+.search-box table{
+	width: 100%;
+	margin-top: 17px;
+}
+.search-box table tr{
+	height: 40px;
+}
+.search-box table tr td input{
+	width: 100px;
+	height: 26px;
+	padding: 0 5px;
+	line-height: 26px;
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+}
+.search-btn{
+	margin-left: 86px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	background: #3E97FC;
+}
+.content-bottom{
+	position: relative;
+	width: 100%;
+	height: 45%;
+	background: #fff;
+}
+.content-bottom table{
+	position: absolute;
+	top: -18px;
+	width: 100%;
+	padding: 0 10px;
+}
+.content-bottom table th{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: normal;
+	background: #d2ecf8;
+}
+.records-table td{
+	height: 40px;
+	line-height: 40px;
+	border-right: ;
+	font-size: 16px;
+	text-align: center;
+}
+.records-table tr{
+	background: #fff;
+}
+.records-table tr:nth-child(2n+1){
+	background: #d2ecf8;
+}
